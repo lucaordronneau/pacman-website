@@ -1,4 +1,4 @@
-Pour lancer notre application:
+# Pour lancer notre application:
 
 Se créer une db `pacman` et créer les tables grâce au fichier db.sql, se trouvant dans le chemin suivant :
 
@@ -11,9 +11,9 @@ Pour se connecter en tant qu'admin sur le site :
                                                 -> pseudo : admin
                                                 -> mdp : admin
 
-Pour se déplacer :
+- Pour se déplacer :
                     Z,Q,S,D
 
-Bon jeu !
+# Bon jeu !
 
 Enzo, Hugo, Luca, Maxime, Tom.
