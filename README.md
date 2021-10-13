@@ -7,7 +7,7 @@ Se créer une db `pacman` et créer les tables grâce au fichier db.sql, se trou
 Dans application.properties, changer son nom utilisateur et son mdp.
 
 
-Pour se connecter en tant qu'admin sur le site :
+- Pour se connecter en tant qu'admin sur le site :
                                                 -> pseudo : admin
                                                 -> mdp : admin
 
