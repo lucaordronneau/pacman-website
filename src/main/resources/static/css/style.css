@@ -1,0 +1,331 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica ;
+    background-color: #f7f7f7;
+    color: #1919A6;
+}
+
+#my_form {
+    margin-block-end: -1em;
+}
+
+/*Block*/
+.block{
+    padding: 8px;
+    margin: 2px;
+    color: #1919A6;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.10);
+    border-radius: 14px;
+}
+
+.block2{
+    padding: 8px;
+    margin: 2px;
+    color: #1919A6;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.11), 0 4px 4px rgba(0,0,0,0.10);
+    border-radius: 14px;
+}
+
+.block label{
+    color: gold;
+    opacity: 100%;
+    font-size: 12px;
+    vertical-align: baseline;
+}
+
+.block span {
+    text-transform: uppercase;
+}
+
+/*Séparation HR*/
+
+.hrS {
+    border: 1px solid #FFFF00;
+    width: 90px;
+}
+
+.hrC {
+    border: 1px solid gold;
+    width: 90px;
+}
+
+/*Lien connexion et inscription*/
+
+.lienIC{
+    text-decoration: none;
+    color:gold;
+}
+
+.lienIC:hover{
+    text-decoration: none;
+    color:gold;
+    opacity: 60%;
+}
+
+h2 span {
+    text-transform: uppercase;
+}
+
+/*Boutons*/
+/*Bouton fond sombre*/
+.buttonS {
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    padding: 8px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #1919A6;
+    color: #FFFF00;
+    border: 2px solid #FFFF00;
+    text-decoration: none;
+}
+
+.buttonS:hover {
+    background-color: #FFFF00;
+    color: #1919A6;
+    text-decoration: none;
+}
+
+/*Bouton fond clair*/
+.buttonC {
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    padding: 8px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    text-transform: uppercase;
+    background: #f7f7f7;
+    color: gold;
+    border: 2px solid gold;
+    text-decoration: none;
+    margin-bottom : 5%;
+}
+
+.buttonC:hover {
+    background-color: #2121de;
+    color: #f7f7f7;
+    text-decoration: none;
+}
+
+/*Table*/
+.table td, table th {
+    text-align: center;
+    text-transform: uppercase;
+    border-color: #2121DE !important;
+}
+.table thead th {
+    border-color: #2121DE!important;
+}
+.table td, table th {
+    border-width: 3px !important;
+    border-color: #2121DE !important;
+    color: #2121DE;
+    background-color: #f7f7f7;
+}
+.table td {
+    color: #2121DE;
+}
+.table th {
+    color: #2121DE;
+}
+
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 566px;
+    height: 566px;
+    min-height: 566px;
+    max-height: 566px;
+    max-width: 566px;
+    min-width: 566px;
+    border: solid black;
+    background-color: #1919A6;
+    margin: auto;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: yellow;
+    border: 8px solid #1919A6;
+    box-sizing: border-box;
+}
+
+.wall {
+    background-color: blue;
+}
+
+.power-pellet {
+    background-color: green;
+    border-radius: 10px;
+}
+
+.nothing {
+    background-color: #1919A6;
+}
+
+.pac-man {
+
+    background-color: yellow;
+    border-radius: 10px;
+
+    /*background-image: url("pacman-img.png");*/
+}
+
+.blinky {
+    background-color: red;
+    border: 0px;
+}
+
+.pinky {
+    background-color: pink;
+    border: 0px;
+}
+
+.inky {
+    background-color: cyan;
+    border: 0px;
+}
+
+.clyde {
+    background-color: orange;
+    border: 0px;
+}
+
+.scared-ghost {
+    background-color: aquamarine;
+    border: 0px;
+}
+
+.flex-container-jeu-classement{
+    postion : absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.key{
+    margin : 5px;
+    text-align : center;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: large;
+}
+
+#contain ul {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 670px;
+}
+
+
+.ghost-lair{
+    background-color: #1919A6;
+}
+
+#z{
+    background-color: darkgrey;
+}
+
+#q{
+    background-color: darkgrey;
+}
+
+#s{
+    background-color: darkgrey;
+}
+
+#d{
+    background-color: darkgrey;
+}
+
+.msg-ctent-other {
+    width:  800px;
+    color: #f7f7f7;
+}
+
+.msg-ctent-other span {
+    display: block;
+    margin: auto;
+    background-color: dodgerblue;
+    border-radius: 5px;
+    width: 275px;
+    text-align: center;
+    float: left;
+    padding: 5px;
+}
+
+.msg-ctent-other {
+    width: 100%;
+}
+
+.msg-ctent-me {
+    width: 100%;
+}
+.msg-ctent-me span {
+    color: white;
+    display: block;
+    margin: auto;
+    background-color: green;
+    border-radius: 5px;
+    width: 275px;
+    text-align: center;
+    float: right;
+    padding: 5px;
+}
+
+.messagerie td {
+    padding: 15px;
+}
+
+.msg-pseudo{
+    text-align: center;
+    color: black;
+}
+
+.msg-date-me {
+    text-align: center;
+    color: green;
+}
+
+.msg-date-other {
+    text-align: center;
+    color: dodgerblue;
+}
+
+.messagerie {
+    border: 2px black solid;
+    display: block;
+    margin: auto;
+}
+
+.messagerie  table{
+    width: 100%;
+    display: block;
+}
+
+@media (max-width : 1100px){
+    .grid {
+        margin: auto;
+    }
+    .flex-container-jeu-classement{
+        flex-direction: column;
+    }
+}

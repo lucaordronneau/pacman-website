@@ -1,0 +1,94 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width = device-width, initial-scale = 1, shrink-to-fit = no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+    <!-- CSS -->
+    <link type="text/css" rel="stylesheet" th:href="@{/css/style.css}">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" th:href="@{/css/images/pacmanfavicon.png}" />
+    <script th:src="@{/chartjs/pacman.js}"></script>
+    <title>PACMAN</title>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2121DE;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="/" title="Revenir au menu">
+        <img alt="texte alternatif pour le lien image" th:src="@{/css/images/pacmanfavicon.png}" width="20" height="20" />
+    </a>
+    <a class="navbar-brand" style="color: white;padding-bottom: 0;padding-left: 0.6%;">PACMAN</a>
+
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+        <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Jouer</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="connexion">Connexion | Inscription</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container">
+    <h2 class = "mt-4"  style="text-align: center;">Bienvenue dans l'univers PACMAN !</h2> <br>
+</div>
+<input type="hidden" id="score_input" value="0">
+<div class="flex-container-jeu-classement">
+
+    <div>
+        <h3 style="text-align: center;" >Score:<span id="score">0</span></h3>
+
+        <div class="grid"></div>
+
+        <div id="contain">
+            <ul id=""keyboard>
+                <div class="key" id="z">Z</div>
+                <div class="key" id="q">Q</div>
+                <div class="key" id="s">S</div>
+                <div class="key" id="d">D</div>
+            </ul>
+        </div>
+    </div>
+
+
+    <div>
+        <table class="table classement">
+            <thead>
+            <tr>
+                <th>POSITION</th>
+                <th>PSEUDO</th>
+                <th>SCORE</th>
+
+            </tr>
+            </thead>
+            <tbody class="thead-light">
+            <tr th:each="personne : ${listeJoueurParScore}">
+                <td th:text="${personne.key}"></td>
+                <td th:text="${personne.value.pseudo}"></td>
+                <td th:text="${personne.value.score}"></td>
+            </tr>
+            </tbody>
+
+        </table>
+    </div>
+
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+</body>
+</html>
